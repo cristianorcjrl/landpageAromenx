@@ -46,10 +46,12 @@ header h1 {
 
 .carousel-caption h5 {
     font-size: 1.5em;
+    color: white;
 }
 
 .carousel-caption p {
     font-size: 1.2em;
+    color: white;
 }
 
 .whatsapp-button {
@@ -58,8 +60,12 @@ header h1 {
 }
 
 footer {
+    background-color: #6A1B9A; /* Color igual al header */
     text-align: center;
     padding: 20px;
-    background-color: #4A148C;
     margin-top: 40px;
+}
+
+.footer-content {
+    color: white; /* El texto del footer será blanco */
 }
