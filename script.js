@@ -1,6 +1,12 @@
-// No es necesario agregar JS adicional, pero si quieres interactuar con el carrusel puedes usar el siguiente código:
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Carrusel cargado con éxito.");
-    // Aquí puedes agregar funciones personalizadas si lo deseas.
-  });
-  
+    
+    // Inicialización del carrusel con Bootstrap JS
+    const carousel = new bootstrap.Carousel(document.querySelector('#carouselPerfumes'), {
+        interval: 3000,  // Intervalo de 3 segundos entre las imágenes
+        pause: 'hover',  // Detener el carrusel cuando el mouse pase por encima
+    });
+
+    // Función personalizada si se desea interactuar con el carrusel
+    // Aquí puedes agregar funcionalidades extras si es necesario
+});
