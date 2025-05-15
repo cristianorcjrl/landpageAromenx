@@ -1,82 +1,44 @@
-/* CSS General */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa; /* Color claro para el fondo */
+/* === Variables simples === */
+:root{
+  --morado:#6A1B9A;
+  --morado-oscuro:#4A0E78;
+  --blanco:#ffffff;
+  --gris-fondo:#f8f9fa;
 }
 
-/* Header */
-header {
-    background-color: #6A1B9A;
-    text-align: center;
-    padding: 60px 0;
-    color: white;
+/* === Reset básico === */
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:'Open Sans',Arial,sans-serif;background:var(--gris-fondo)}
+
+/* === Header === */
+header{
+  background:var(--morado);
+  color:var(--blanco);
+}
+.brand-logo{
+  max-width:150px;
+  height:auto;
+}
+.site-title{font-size:2.2rem;margin:0}
+@media(max-width:768px){
+  .site-title{font-size:1.6rem}
 }
 
-header img {
-    max-width: 200px;
-    margin-bottom: 20px;
+/* === Carrusel === */
+.carousel-item{height:60vh}
+@media(max-width:768px){.carousel-item{height:50vh}}
+.carousel-item img{height:100%;object-fit:cover}
+.carousel-caption{background:rgba(0,0,0,.55);padding:8px;border-radius:6px}
+
+/* === Botón WhatsApp === */
+.btn-success{
+  font-weight:600;
+  padding:.75rem 1.5rem;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 20px 0;
-}
+/* === Footer === */
+.bg-morado{background:var(--morado)}
+footer{color:var(--blanco);text-align:center;font-size:.9rem}
 
-/* Carrusel */
-.carousel-item {
-    height: 60vh; /* Altura dinámica del carrusel */
-    background: #333;
-    color: white;
-    text-align: center;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en las imágenes del carrusel */
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.carousel-caption h5 {
-    font-size: 1.5em;
-    color: white;
-}
-
-.carousel-caption p {
-    font-size: 1.2em;
-    color: white;
-}
-
-/* Botón WhatsApp */
-.whatsapp-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #6A1B9A;  /* Color morado del footer */
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    color: white;
-}
-
-.footer-content {
-    background-color: white;  /* Parte interna blanca */
-    color: #6A1B9A;  /* Texto morado */
-    padding: 10px;
-    border-radius: 5px;
-}
-
+/* === Utilidades === */
+.lead{font-size:1.05rem;font-weight:300}
